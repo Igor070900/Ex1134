@@ -9,9 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         UserService userService = new UserServiceImpl();
-
         userService.createUsersTable();
-
         userService.saveUser("Иван", "Иванов", (byte) 30);
         userService.saveUser("Анна", "Петрова", (byte) 28);
         userService.saveUser("Сергей", "Кузнецов", (byte) 35);
